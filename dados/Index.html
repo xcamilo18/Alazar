@@ -1,0 +1,174 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+
+    
+    
+	<meta charset="utf-8">
+	<title>Al Azar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- site favicon -->
+	<link rel="icon" type="image/png" href="assets/images/favicon.ico">
+	<!-- Place favicon.ico in the root directory -->
+
+	<!-- All stylesheet and icons css  -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/icofont.min.css">
+	<link rel="stylesheet" href="assets/css/swiper.min.css">
+	<link rel="stylesheet" href="assets/css/lightcase.css">
+	<link rel="stylesheet" href="assets/css/odometer.css">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+
+    <!-- ============================================================= -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación de Dados</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+	
+	<!-- scrollToTop start here -->
+    <a href="#" class="scrollToTop"><i class="icofont-rounded-up"></i></a>
+    <!-- scrollToTop ending here -->
+
+	<!-- ==========shape image Starts Here========== -->
+	<div class="body-shape">
+		<img src="assets/images/shape/body-shape.png" alt="shape">
+	</div>
+	<!-- ==========shape image end Here========== -->
+
+	<!-- ==========Header Section Starts Here========== -->
+	<header class="header-section">
+		<div class="container">
+			<div class="header-holder d-flex flex-wrap justify-content-between align-items-center">
+				<div class="brand-logo d-none d-lg-inline-block">
+					<div class="logo">
+						<a href="../index.html">
+							<img src="assets/images/logo/logo.png" alt="logo">
+						</a>
+					</div>
+				</div>
+				<div class="header-menu-part">
+					<div class="header-top">
+						<div class="header-top-area">
+							<ul class="left">
+								<li>
+									<i class="icofont-ui-call"></i> <span>+57 322 295 67 20</span>
+								</li>
+								<li>
+									<i class="icofont-location-pin"></i> Aguachica, Cesar, COL
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="header-bottom">
+						<div class="header-wrapper justify-content-lg-end">
+							<div class="mobile-logo d-lg-none">
+								<a href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
+							</div>
+							<div class="menu-area">
+								<ul class="menu">
+									<li>
+										<a href="../index.html" class="active">Inicio</a>
+									</li>
+									
+								</ul>
+								<div class="header-bar d-lg-none">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+								<div class="ellepsis-bar d-lg-none">
+									<i class="icofont-info-square"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<!-- ==========Header Section Ends Here========== -->
+
+	<!-- ===========Banner Section start Here========== -->
+	<section class="banner" style="background-image: url(assets/images/banner/bg.jpg);">
+		<div class="container">
+			<div id="app">
+                <h1 >Simulación de Dados</h1>
+                <div>
+                    <label for="targetNumber" >Seleccione un número objetivo (2-12): </label>
+                    <select id="targetNumber" style="color: white; background-color: chocolate;">
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <button id="calculateProbability">Calcular Probabilidad</button>
+                </div>
+                <div id="probabilityResult"></div>
+                <button id="rollButton" style="background-color: white; ">Lanzar Dados</button>
+                <div id="diceContainer">
+                    <div id="die1" class="die">-</div>
+                    <div id="die2" class="die">-</div>
+                </div>
+                <div id="result"></div>
+                <canvas id="probabilityChart" width="400" height="200" style="background-color: white;"></canvas>
+                <hr>
+                <a href="Index.html" style="background-color: rgb(188, 9, 3); color: rgb(255, 255, 255); border-radius: 20%;"> Reiniciar</a>
+
+            </div>
+            <script src="script.js"></script>
+            
+		</div>
+	</section>
+	<!-- ===========Banner Section Ends Here========== -->
+
+	
+
+	<!-- All Needed JS -->
+	<script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+	<script src="assets/js/circularProgressBar.min.js"></script>
+	<script src="assets/js/isotope.pkgd.min.js"></script>
+	<script src="assets/js/swiper.min.js"></script>
+	<script src="assets/js/lightcase.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/viewport.jquery.js"></script>
+	<script src="assets/js/odometer.min.js"></script>
+	<script src="assets/js/main.js"></script>
+
+
+	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+	<!-- <script>
+		window.ga = function () {
+			ga.q.push(arguments)
+		};
+		ga.q = [];
+		ga.l = +new Date;
+		ga('create', 'UA-XXXXX-Y', 'auto');
+		ga('set', 'anonymizeIp', true);
+		ga('set', 'transport', 'beacon');
+		ga('send', 'pageview')
+	</script>
+	<script src="https://www.google-analytics.com/analytics.js" async></script> -->
+</body>
+
+</html>
